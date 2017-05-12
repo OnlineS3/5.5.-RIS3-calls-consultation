@@ -1,0 +1,50 @@
+import { Components, registerComponent } from 'meteor/vulcan:core';
+import React, { PropTypes, Component } from 'react';
+
+class Layout extends Component {
+
+  render() {
+    return (
+      <div>
+        <Components.HeadTags />
+
+        <Components.UsersProfileCheck {...this.props} />
+
+	<div id="page">
+
+	  <div id="mainpage" className="site">
+
+            <Components.Header {...this.props}/>
+	    
+	    <div className="site-content">
+	      <article id="main-content">
+		    <Components.FlashMessages/>
+
+		    <Components.Newsletter/>
+
+		    {this.props.children}
+
+	      </article>
+
+	      <aside id="sidebar">
+		<a href="/packages/example-customisation/lib/static/appGuideline.pdf" target="_blank"><button className="alt"> Download Guide <i className="fa fa-file-pdf-o" aria-hidden="true"></i></button></a>
+<div></div>
+		<a href="/"><button> Access to application  <img src="https://raw.githubusercontent.com/OnlineS3/Common-Assets/master/Layout%20code/img/access-icon.png?token=AY7agaHxsL61CY4DszROJznxbfR51al4ks5ZGb1mwA%3D%3D" width="20"/></button></a>
+	      </aside>
+
+	    </div>
+    
+            <Components.Footer {...this.props}/>
+
+  	  </div>
+
+        </div>
+      
+      </div>
+    )
+  }
+}
+
+Layout.displayName = "Layout";
+
+registerComponent('Layout', Layout);

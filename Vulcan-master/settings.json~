@@ -1,0 +1,137 @@
+{
+  "public": {
+    "title": "Calls Consultation",
+    "tagline":"Calls Consultation",
+
+    "logoUrl": "http://www.onlines3.eu/wp-content/onlines3-images/logo_onlines3_cloud.png",
+    "logoHeight": "80",
+    "logoWidth": "250",
+    "faviconUrl": "/favicon.ico",
+
+    "requirePostsApproval":false,
+    "requireViewInvite":false,
+    "requirePostInvite":false,
+    "enableNewsletter":true,
+    "autoSubscribe":false,
+    "emailNotifications":true,
+    "postInterval": 20,
+    "RSSLinksPointTo": "link",
+    "commentInterval": 20,
+    "maxPostsPerDay": 10,
+    "startInvitesCount": 5,
+    "postsPerPage": 10,
+
+    "language": "en",
+    "locale": "en",
+
+    "twitterAccount": "https://twitter.com/online_s3",
+    "facebookPage": "http://facebook.com/foo",
+
+    "googleAnalyticsId":"123foo",
+    "useSegment": false,
+    "segmentWriteKey": "456bar"
+  },
+
+  "defaultEmail": "hello@world.com",
+  "mailUrl": "smtp://postmaster%40foo.mailgun.org:foo123@smtp.mailgun.org:587/",
+  "scoreUpdateInterval": "30",
+
+  "embedlyKey":"123foo",
+  "mailChimpAPIKey": "123foo",
+  "mailChimpListId": "123foo",
+  "newsletterFrequency": [1,2,3,4,5,6,7],
+  "newsletterTime": "14:20",
+  "newsletterExcerptLength": 20,
+  "postExcerptLength": 30,
+
+  "categories": [
+    {
+      "name": "H2020 Calls",
+      "description": "Horizon 2020 Calls for Proposals",
+      "order": 4,
+      "slug": "h2020"
+    },
+    {
+      "name": "3rd Health Programme Calls",
+      "description": "3rd Health Programme Calls for Proposals",
+      "order": 7,
+      "slug": "3rdHealth"
+    },
+    {
+      "name": "Asylum, Migration and Integration Fund",
+      "description": "Asylum, Migration and Integration Fund Calls for Proposals",
+      "order": 10,
+      "slug": "AMI"
+    },
+    {
+      "name": "Consumer Programme",
+      "description": "Consumer Programme Calls for Projects",
+      "order": 13,
+      "slug": "consumer"
+    },
+    {
+      "name": "COSME",
+      "description": "Competitiveness of Enterprises and Small and Medium-sized Enterpreises (SMEs)",
+      "order": 16,
+      "slug": "COSME"
+    },
+    {
+      "name": "Hercule III Programme",
+      "description": "Financial support to national and regional administrations in Member States",
+      "order": 19,
+      "slug": "hercule"
+    },
+    {
+      "name": "Internal Security Fund",
+      "description": "Internal Security Fund",
+      "order": 22,
+      "slug": "internal"
+    },
+    {
+      "name": "Justice Programme",
+      "description": "Concrete financial support to organisations specialised thematically in justice",
+      "order": 25,
+      "slug": "justice"
+    },
+    {
+      "name": "Pilot Projects & Preparatory Actions",
+      "description": "Introducing new initiatives that may turn into standing EU funding programmes",
+      "order": 28,
+      "slug": "pilot"
+    },
+    {
+      "name": "Promotion of Agricultural Products",
+      "description": "Information provision and promotion measures concerning agricultural products",
+      "order": 31,
+      "slug": "promotion"
+    },
+    {
+      "name": "Research Fund for Coal & Steel",
+      "description": "Funding for high quality research projects supporting the competitiveness of the European Coal and Steel industries",
+      "order": 34,
+      "slug": "research"
+    },
+    {
+      "name": "Rights, Equality and Citizenship Programme",
+      "description": "Consumer Programme Calls for Projects",
+      "order": 37,
+      "slug": "REC"
+    },
+    {
+      "name": "Union Civil Protection Mechanism",
+      "description": "Consumer Programme Calls for Projects",
+      "order": 40,
+      "slug": "UCP"
+    }
+  ],
+  "oAuth": {
+    "twitter": {
+      "consumerKey": "foo",
+      "secret": "bar"
+    },
+    "facebook": {
+      "appId": "foo",
+      "secret": "bar"
+    }
+  }
+}

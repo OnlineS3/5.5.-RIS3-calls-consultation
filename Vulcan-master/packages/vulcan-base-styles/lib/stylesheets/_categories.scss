@@ -1,0 +1,36 @@
+.category-menu-item{
+  font-size: small;
+  position: relative;
+  .categories-delete-link, .edit-category-link{
+    position: absolute;
+    top: 4px;
+    right: 5px;
+  }
+  white-space: normal;
+}
+
+.categories-new-button{
+  text-align: center;
+  padding: $vmargin/2;
+  button{
+    display: inline-block;
+  }
+}
+
+.categories-node .categories-node{
+  font-size: x-small;
+  border-left: 1px $lightest-border solid;
+  padding-left: $hmargin;
+  width: 100%;
+}
+
+.categories-edit-form-admin {
+  @include flex-center;
+  justify-content: space-between;
+  margin-bottom: $vmargin * 2;
+}
+
+.categories-list {
+  width: 100%;
+
+}

@@ -1,0 +1,21 @@
+import { Components, registerComponent } from 'meteor/vulcan:core';
+import React from 'react';
+
+const PostsListHeader = () => {
+
+  return (
+	<div className="col-sm-3">
+	  <div className="container">
+	    Calls
+	    <br/>
+	    <Components.SearchForm/>
+	    <hr/>
+	    <Components.CategoriesList/>
+	    </div>
+	</div>
+  )
+}
+
+PostsListHeader.displayName = "PostsListHeader";
+
+registerComponent('PostsListHeader', PostsListHeader);

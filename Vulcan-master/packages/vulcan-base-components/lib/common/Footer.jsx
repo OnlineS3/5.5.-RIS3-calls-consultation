@@ -1,0 +1,37 @@
+import { registerComponent } from 'meteor/vulcan:core';
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
+
+const Footer = props => {
+  return (
+<footer id="site-footer">
+	<div id="footer-links">
+		<ul>
+		    <li><a href="http://www.onlines3.eu/"><span>Online S3 Project</span></a></li>
+		    <li className="active"><a href="http://www.s3platform.eu/applications/"><span>Applications</span></a></li>
+		    <li><a href="http://www.s3platform.eu/toolbox/"><span>Toolbox</span></a></li>
+		    <li><a href="http://www.s3platform.eu/analytics/"><span>Analytics</span></a></li>
+		    <li><a href="http://www.s3platform.eu/support/"><span>Support</span></a></li>
+		    <li><a href="http://www.onlines3.eu/contact/"><span>Contact</span></a></li>
+		</ul>
+		<div id='copyright'>
+		    <img src="https://raw.githubusercontent.com/OnlineS3/Common-Assets/master/Layout%20code/img/logo.png?token=AY7agf2Q0XNhlJl55aWITNeTc2eKqEk4ks5ZGb-LwA%3D%3D" width="30" alt="online logo"/>
+		    <p>Copyright &copy; 2016-2017 OnlineS3 Project</p>
+		</div>
+	    </div>
+
+	    <div id="european">
+		<img src="https://raw.githubusercontent.com/OnlineS3/Common-Assets/master/Layout%20code/img/eu_logo.png?token=AY7agWrYu86sB8JCGycIO1Cy5gIu3d-Mks5ZGb-ewA%3D%3D" width="85" alt="Co-funded by the European Union"/>
+
+		<p>
+		    Funded by the Horizon 2020 Framework Programme of the European Union.
+		</p>
+	    </div>
+	
+	</footer>
+  )
+}
+
+Footer.displayName = "Footer";
+
+registerComponent('Footer', Footer);
