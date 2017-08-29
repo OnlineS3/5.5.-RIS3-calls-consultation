@@ -9,35 +9,49 @@ import { registerComponent } from 'meteor/vulcan:core';
 const Guide = () => {
   return (
     <div className="container">
+		<h2>Using the Calls Consultation App</h2>
+    	<a href="/RIS3 Calls Consultation Application Guideline.pdf" id="download-guide" className="pull-right" onclick="">Download pdf <i className="fa fa-file-pdf-o" aria-hidden="true"/></a>
+		<p>This guide describes how to use the Calls Consultation app for two groups of users: organisers and
+			participants in call consultation processes. Participants in the process can skip the steps marked as
+		    "for the organiser".</p>
+    	<p className="steps">Step 1: Selection of stakeholders to be invited (for the organiser)</p>
+    	<p>
+			Starting from the stakeholders' mapping, this stage aims to identify the basic categories of stakeholders, based on their level of interest and influence on the specific call.
+    	</p>
 
-      <h2>How to use this application step-by-step?</h2>
-      <a href="#" id="download-guide" className="pull-right" onclick="">Download pdf <i className="fa fa-file-pdf-o" aria-hidden="true"/></a>
+		<br/>
 
-      <p className="steps">Step 1 - Selection of stakeholders to be invited</p>
-      <p>
-	Starting from the stakeholders' mapping, this stage aims to identify the basic categories of stakeholders, based on their level of interest and influence on the specific call.
-      </p>
+    	<p className="steps"><strong>Step 2 - Selection of consultation mode</strong></p>
+	    <p>
+			A choice should be made as to whether the consultation method is going to be open to the public or targeted.
+	    </p>
+		<ol>
+			<li>
+				Create a collaboration board and invite users (by default boards are public).
+				<div className="img-container">
+					<img src="img/createCall.png" style={{width: 620}}/>
+				</div>
+				<p className="img-caption">Figure 1a: Creating a discussion board for a specific call.</p>
+			</li>
+			<li>
+				Create a point for discussion concerning this call such as <q>Funding priorities</q> and invite members of a specific group to contribute.
+				<div className="img-container">
+					<img src="img/createPost.png" style={{width: 620}}/>
+				</div>
+				<p className="img-caption">Figure 1b: Creating a new post.</p>
+			</li>
+			<li>
+				Raise a item within the discussion and express your opinion concerning this topic.
+				<div className="img-container">
+					<img src="img/createComment.png" style={{width: 620}}/>
+				</div>
+				<p className="img-caption">Figure 1c: Creating a new comment and voting.</p>
+			</li>
+		</ol>
 
+		<br/>
 
-      <p className="steps">Step 2 - Selection of consultation mode</p>
-      <p>
-	A choice should be made as to whether the consultation method is going to be open to the public or targeted.
-      </p>
-<ol>
-	<li>
-		Create a collaboration board and invite users (by default boards are public).
-		<img src=""/>
-		<p className="img-caption">Figure 1a: ...</p>
-	</li>
-	<li>
-		
-		<img src=""/>
-		<p className="img-caption">Figure 1b: ...</p>
-	</li>
-</ol>
-
-
-      <p className="steps">Step 3 - Definition of call assessment criteria under the RIS3 framework</p>
+      <p className="steps"><strong>Step 3 - Definition of call assessment criteria under the RIS3 framework</strong></p>
       <p>
 	Considering factors highlighted by the follow assessment grid communicate and collaborate in the definition of call assessment criteria.
       </p>
@@ -143,12 +157,16 @@ const Guide = () => {
 		</table>
 	</div>
 
+	<br/>
 
-      <p className="steps">Step 4 - Analysis of stakeholders' views and reporting to the Call authority</p>
-      <p>
-	...
-      </p>
-
+    <p className="steps"><strong>Step 4 - Analysis of stakeholders' views and reporting to the Call authority</strong></p>
+    <p>
+		Subscribe to newsletters to retrieve periodic reports concerning users' opinions and priorities on calls.
+		<div className="img-container">
+			<img src="img/subscribe.png" style={{width: 620}}/>
+		</div>
+		<p className="img-caption">Figure 2: Subscribe to newsletters via <q>My profile</q> or the Newsletter banner.</p>
+    </p>
 
     </div>
   )
